@@ -1,0 +1,44 @@
+/**
+almost black: #0e1434
+basic blue:   #045491
+light blue:   #4285f4
+
+**/
+
+
+body{
+  font-family: sans-serif; 
+}
+
+select{
+  padding: 2px;
+}
+
+#wrapper{
+  margin: 0 auto; 
+  width: 80%;
+}
+#wrapper #header{
+  border-bottom: 5px solid #045491;
+  margin-bottom: 0;
+}
+
+#wrapper #header h1{
+  margin-bottom: 0;
+  color: #0e1434;
+}
+#wrapper #header h2{
+  margin-top: 0;
+  color: #045491; 
+  margin-bottom: .25em;
+}
+#wrapper #main{
+  margin-top:0;
+  border: 1px sold #045491;
+  border-top: 5px solid #4285f4;
+  padding-top: 0.5em;
+}
+
+.rigs{
+ display:none;
+}

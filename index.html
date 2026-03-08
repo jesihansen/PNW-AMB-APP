@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>PWN Amb App 1.0 - ETA Estimator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>PNW Ambulance</h1>
+        <h2>Rig Planner / ETA Estimator</h2>
+      </div>
+      <div id="main">
+       <container id="sidebar" class="left">
+        <!-- input planned route for unit -->
+	<H3>Input Scheduled</H3>
+	<form>
+          <label for="county">County:</label>
+	  <select id="county" name="county">
+		<option value="cascade" data-target="cascade">Cascade</option>
+	  	<option value="clallam" data-target="clallam">Clallam</option>
+		<option value="kitsap" data-target="kitsap" selected>Kitsap</option>
+		<option value="pierce" data-target="pierce">Pierce</option>
+		<option value="pierce" data-target="thurston">Thurston</option>
+		<option value="grays" data-target="grays">Grays</option>
+	  </select> | 
+<!--<br />---<br />-->
+	<label id="kitsap-rigs" for="kitsap-rigs">Rig:</label>
+	  <select name="kitsap-rigs" class="rigs">
+		<option value="A91">A91</option>
+		<option value="A94">A94</option>
+		<option value="A95">A95</option>
+	  	<option value="A96">A96</option>
+		<option value="A97">A97</option>
+		<option value="A98">A98</option>
+		<option value="A99">A99</option>
+		<option value="M90">M90</option>
+		<option value="M91">M91</option>
+		<option value="M91">M92</option>
+		<option value="M91">M93</option>
+		<option value="CAB3">CAB3</option>
+		<option value="CAB4">CAB4</option>
+	  </select>	  
+
+	</form>
+       </container>
+       <container id="results" class="right">
+        <!-- display next planned available time units are available -->
+       </container>
+      </div><!--end main-->
+
+    </div><!-- end #wrapper-->
+
+
+	<script src="js/app.js"></script>
+  </body>
+</html>
