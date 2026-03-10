@@ -12,7 +12,7 @@
         <h1>PNW Ambulance</h1>
         <h2>Rig Planner / ETA Estimator</h2>
       </div>
-      <div id="main">
+      <div id="main" class="flex-container">
        <container id="sidebar" class="left">
         <!-- input planned route for unit -->
 	<H3>Input Scheduled</H3>
@@ -25,7 +25,7 @@
 		<option value="pierce" data-target="pierce">Pierce</option>
 		<option value="pierce" data-target="thurston">Thurston</option>
 		<option value="grays" data-target="grays">Grays</option>
-	  </select> | 
+	  </select>
 	<label id="rigs" for="rigs">Rig:</label>
 	<select name="rigs" class="rigs">
 	<!-- Cascade -->	
@@ -93,12 +93,30 @@
 	   <option value="A148" class="pierce-rig">A148</option>
 	   <option value="CAB6" class="pierce-rig">CAB6</option>
 	   <option value="CAB7" class="pierce-rig">CAB7</option>
-</select>	  
+	</select>	  
 
 	</form>
        </container>
        <container id="results" class="right">
         <!-- display next planned available time units are available -->
+	<table>
+		<tr>
+			<th>Status</th>
+			<th>Pickup</th>
+			<th>Estimated Dropoff</th>
+			<th>Return time</th>
+			<th>Next ETA</th>
+		</tr>
+		<tr>
+			<td>Available</td>
+			<td>1800</td>
+			<td>1930</td>
+			<td>30m</td>
+			<td>2000</td>
+		</tr>
+	
+	
+	</table>
        </container>
       </div><!--end main-->
 
