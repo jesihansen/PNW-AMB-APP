@@ -5,15 +5,34 @@ light blue:   #4285f4
 
 **/
 
-
+/* bare tags */
 body{
   font-family: sans-serif; 
 }
-
+h1,h2,h3,h4,h5{
+  margin: 0; 
+}
 select{
   padding: 2px;
 }
 
+table, td, th{
+  border: 1px solid black;
+}
+th{
+  padding-top: 3px;
+}
+td {
+  padding: 3px;
+}
+form{
+  display: flex;
+  margin-top: 1em;
+}
+select::first{
+  margin-right: 1em;
+}
+/* ids */
 #wrapper{
   margin: 0 auto; 
   width: 80%;
@@ -39,6 +58,17 @@ select{
   padding-top: 0.5em;
 }
 
+/* classes */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+align-items: stretch; 
+
+}
+.left, .right{
+  padding: 1em;
+flex-grow: 1;
+}
 .rigs{
  /*display:none;*/
 }
