@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>PWN Amb App 1.0 - ETA Estimator</title>
+    <title>PNW Amb App 1.0 - ETA Estimator</title>
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
@@ -19,8 +19,9 @@
 	<form>
           <label for="county">County:</label>
 	  <select id="county" name="county">
+		<option>Select</option>
 		<option value="cascade" data-target="cascade">Cascade</option>
-	  	<option value="clallam" data-target="clallam" selected>Clallam</option>
+	  	<option value="clallam" data-target="clallam">Clallam</option>
 		<option value="kitsap" data-target="kitsap">Kitsap</option>
 		<option value="pierce" data-target="pierce">Pierce</option>
 		<option value="pierce" data-target="thurston">Thurston</option>
@@ -28,24 +29,20 @@
 	  </select>
 	<label id="rigs" for="rigs">Rig:</label>
 	<select name="rigs" class="rigs">
+	   <option> --- </option>
 	<!-- Cascade -->	
-	   <option value="A82" class="clallam-rig">A82/M82</option>
-	   <option value="A83" class="clallam-rig">A83/M83</option>
-	   <option value="A84" class="clallam-rig">A84/M84</option>
-	   <option value="SA1" class="clallam-rig">SA1</option>
-	   <option value="SA2" class="clallam-rig">SA2</option>
-	   <option value="SA3" class="clallam-rig">SA3</option>
-	   <option value="SA4" class="clallam-rig">SA4</option>
-	   <option value="SA5" class="clallam-rig">SA5</option>
-	   <option value="CAB5" class="clallam-rig">CAB5</option>
+	   <option value="BLS1" class="cascade-rig">BLS1</option>
+	   <option value="BLS2" class="cascade-rig">BLS2</option>
+	   <option value="BLS3" class="cascade-rig">BLS3</option>
+	   <option value="CAB1" class="cascade-rig">CAB1</option>
 	<!-- Kitsap -->	
 	   <option value="A91" class="kitsap-rig">A91</option>
+	   <option value="A92" class="kitsap-rig">A92</option>
+	   <option value="A93" class="kitsap-rig">A93</option>
 	   <option value="A94" class="kitsap-rig">A94</option>
-	   <option value="A95" class="kitsap-rig">A95</option>
 	   <option value="A96" class="kitsap-rig">A96</option>
 	   <option value="A97" class="kitsap-rig">A97</option>
 	   <option value="A98" class="kitsap-rig">A98</option>
-	   <option value="A99" class="kitsap-rig">A99</option>
 	   <option value="M90" class="kitsap-rig">M90</option>
 	   <option value="M91" class="kitsap-rig">M91</option>
 	   <option value="M92" class="kitsap-rig">M92</option>
